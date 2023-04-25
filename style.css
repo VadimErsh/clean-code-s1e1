@@ -1,5 +1,5 @@
 /* Basic Style */
-body {
+.wrapper {
   background-color: #f8f8f8;
   color: #333;
   font-family: Lato, sans-serif;
@@ -21,7 +21,9 @@ body {
 }
 
 @media (max-width:768px) {
-  .header-block { text-align: center;
+
+  .header-block {
+    text-align: center;
 }
 
 }
@@ -42,16 +44,18 @@ body {
   display: flex;
 }
 
-ul {
+.order-list {
   margin: 0;
   padding: 0px;
 }
 
-li, h3 {
+.task-list,
+.table-of-contents {
   list-style: none;
 }
 
-input,button{
+.correct-input,
+.button-style {
   outline: none;
 }
 
@@ -138,13 +142,13 @@ input,button{
   width: 226px;
 }
 
-button.delete img {
+.button-style.delete .delete-img {
   height: 2em;
   transform: rotateZ(45deg);
   transition: transform 200ms ease-in;
 }
 
-button.delete img:hover {
+.button-style.delete .delete-img:hover {
   transform: rotateZ(0);
 }
 
